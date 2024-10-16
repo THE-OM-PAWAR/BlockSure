@@ -411,59 +411,59 @@ app.post("/submit_result", multiple_upload, async (req, res) => {
 
 //============= Server signin user here ============//
 
-// app.get("/signIn", async (req, res) => {
-//   res.sendFile(__dirname + "/public/HTML/signin.html");
-// });
+app.get("/signIn", async (req, res) => {
+  res.sendFile(__dirname + "/public/HTML/signin.html");
+});
 
-// app.post("/signIn", async (req, res) => {
-//   try {
-//     if (req.body.password == req.body.C_password) {
-//       const user_info = await users.find({ user_mobile: req.body.mobile_No });
-//       // console.log(user_info[0])
-//       let exist = undefined;
-//       if (user_info[0] !== undefined) {
-//         if (user_info[0].user_mobile == req.body.mobile_No) {
-//           exist = true;
-//         }
-//         console.log(3);
-//       }
-//       if (exist == true) {
-//         res.status(400).send("this mobile exist so login please ");
-//         return;
-//       }
-//       if (exist == undefined) {
-//         var mydata = new users({
-//           user_name: req.body.username,
-//           user_mobile: req.body.mobile_No,
-//           user_passward: req.body.password,
-//           sign_up_date: Date(Date.now()),
-//         });
-//         const token = await mydata.generateAuthToken();
-//         // console.log(token);
-//         console.log("omp 196");
+app.post("/signIn", async (req, res) => {
+  try {
+    if (req.body.password == req.body.C_password) {
+      const user_info = await users.find({ user_mobile: req.body.mobile_No });
+      // console.log(user_info[0])
+      let exist = undefined;
+      if (user_info[0] !== undefined) {
+        if (user_info[0].user_mobile == req.body.mobile_No) {
+          exist = true;
+        }
+        console.log(3);
+      }
+      if (exist == true) {
+        res.status(400).send("this mobile exist so login please ");
+        return;
+      }
+      if (exist == undefined) {
+        var mydata = new users({
+          user_name: req.body.username,
+          user_mobile: req.body.mobile_No,
+          user_passward: req.body.password,
+          sign_up_date: Date(Date.now()),
+        });
+        const token = await mydata.generateAuthToken();
+        // console.log(token);
+        console.log("omp 196");
 
-//         res.cookie("jwt_user", token, {
-//           expires: new Date(Date.now() + 1000 * 60 * 60 * 3),
-//           httpOnly: true,
-//           // secure:true
-//         });
+        res.cookie("jwt_user", token, {
+          expires: new Date(Date.now() + 1000 * 60 * 60 * 3),
+          httpOnly: true,
+          // secure:true
+        });
 
-//         await mydata
-//           .save()
-//           .then((e) => {
-//             res.status(201).redirect("/");
-//           })
-//           .catch((error) => {
-//             res.status(400).send("not saveed 210" + error);
-//           });
-//       }
-//     } else {
-//       res.status(400).send("invalid details");
-//     }
-//   } catch (error) {
-//     res.status(400).send("not saveed 216" + error);
-//   }
-// });
+        await mydata
+          .save()
+          .then((e) => {
+            res.status(201).redirect("/");
+          })
+          .catch((error) => {
+            res.status(400).send("not saveed 210" + error);
+          });
+      }
+    } else {
+      res.status(400).send("invalid details");
+    }
+  } catch (error) {
+    res.status(400).send("not saveed 216" + error);
+  }
+});
 
 //================================================//
 
