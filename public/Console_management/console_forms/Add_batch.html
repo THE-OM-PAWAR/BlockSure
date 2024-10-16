@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="SVG/coaching favicon.svg"
+      type="image/x-icon"
+    />
+    <meta name="author" content="RKclasses" />
+
+    <meta property="og:image" content="SVG/coaching favicon.svg" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="SVG/coaching favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/svg"
+      sizes="32x32"
+      href="SVG/coaching favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/svg"
+      sizes="16x16"
+      href="SVG/coaching favicon.svg"
+    />
+    <link rel="mask-icon" href="SVG/coaching favicon.svg" color="#ffffff" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link
+      rel="shortcut icon"
+      href="../SVG/coaching favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../CSS/Login.css" />
+    <link rel="stylesheet" href="../CSS/basic.css" />
+    <link rel="stylesheet" href="../CSS/component styles/footer.css" />
+    <link rel="stylesheet" href="/Console_management/Console_CSS/form.css" />
+    <link
+      rel="stylesheet"
+      href="/Console_management/Console_CSS/Console_management.css"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <!-------------|| LOGIN HTML ARE HERE ||------------->
+    <section id="Login_main">
+      <div class="sign_in batch_form max_width_parent_component" id="sign_in">
+        <div class="heading_slider">
+          <div class="blue_dot blue_dot_big"></div>
+          <div class="head_text head_text_big">Add Batches</div>
+        </div>
+
+        <!-- making form here -->
+        <form action="/Add_batch" method="post" id="form_signIn">
+          <div>
+            <p>Access your account of Rk coaching classes pithampur</p>
+            <br />
+            <br />
+          </div>
+          <!-- user mobile number -->
+          <p>Batch Name</p>
+          <input
+            type="text"
+            name="Batch_name"
+            id="Batch_name"
+            placeholder="Batch Name"
+            required
+          />
+          <!-- user passward -->
+          <p>Batch Code</p>
+          <input
+            type="text"
+            name="Batch_code"
+            id="Batch_code"
+            onchange="Code_func(this)"
+            placeholder="Batch Code"
+            required
+          />
+          <!-- user passward -->
+          <p>Course Fees</p>
+          <input
+            type="text"
+            name="Course_Fees"
+            id="Course_Fees"
+            placeholder="Course Fees"
+            required
+          />
+
+          <!-- buttons related div -->
+          <div class="btn_s" class="main_btn">
+            <!-- cancel buttons -->
+            <a href="/management_console" class="main_btn">
+              <input type="button" value="cancel" id="Cancel" />
+            </a>
+            <!-- submit buttons -->
+            <input
+              type="submit"
+              id="Sign_in_btn"
+              class="main_btn"
+              value="Add BAtch"
+            />
+          </div>
+        </form>
+      </div>
+
+      <!-------------|| GIVING OPTION FOR SIGNIN ARE HERE ||------------->
+
+      <!-------------|| GIVING OPTION FOR SIGNIN ARE HERE ||------------->
+    </section>
+    <!-------------|| LOGIN HTML END ARE HERE ||------------->
+
+    <!-------------|| LINKING ALL THE JAVA SCRIPT HERE ||------------->
+    <!-- <script src="../JavaScript/pass_verification.js"></script> -->
+    <!--------------------|| END OF JS HERE ||---------------------->
+  </body>
+  <script>
+    let Code_func = (element) => {
+        if (element.value.toString().length != 6) {
+            console.log(element.value)
+            element.value = ""
+        }
+    };
+  </script>
+</html>

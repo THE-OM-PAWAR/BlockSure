@@ -1,0 +1,182 @@
+/* body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    margin: auto;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+} */
+
+.batch_form {
+  width: 30rem;
+}
+
+.form_container {
+  background-color: #ffffff;
+  width: auto;
+  padding: 1rem 1rem;
+  margin: 10rem auto;
+}
+.form_sections {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.3rem;
+  color: #353535;
+}
+.section_1 {
+  padding: 1.4rem;
+}
+.section_2 {
+  width: 22rem;
+  margin: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form input,
+form select , .btn_purple {
+  padding: 0.5rem 1.5rem;
+  align-self: center;
+  border: 0.2rem solid #f2f2f2;
+  outline: none;
+  border-radius: 0.3rem;
+  width: 100%;
+  height: 4rem;
+  margin: 0.3rem 0 1.8rem 0;
+  background-color: white;
+}
+.section_1 > input,
+.section_1 > select {
+  width: 33rem;
+  height: 4rem;
+  margin: 0.3rem 0 1.8rem 0;
+  background-color: white;
+}
+#student_img_label {
+  background-color: #dcebee;
+  height: 20rem;
+  width: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+}
+#student_img_label img {
+  display: flex;
+  object-fit: cover;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  z-index: 0;
+}
+#student_img_label input {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+}
+#student_img {
+  /* visibility: hidden; */
+  display: none;
+}
+.School_suggestion {
+  width: 100%;
+  padding: 1rem;
+  padding-top: 0;
+  margin-top: 2.8rem;
+  height: 40rem;
+  overflow-y: scroll;
+  position: relative;
+}
+.School_suggestion::-webkit-scrollbar {
+  display: none;
+}
+.School_suggestion h5 {
+  font-size: 1.8rem;
+  position: sticky;
+  top: 0;
+  padding-top: 1rem;
+  background: #ffffff;
+}
+.suggestion_box {
+  background-color: #efefef;
+  padding: 0.6rem 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 1.2rem 0.4rem;
+  border-radius: 0.4rem;
+}
+#log_in_btn,
+#Sign_in_btn , #submit{
+  background: #008aab !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+.btn_s input {
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+.label_inp {
+  font-size: 1.4rem;
+}
+._inp_disclamer {
+  font-size: 1.2rem;
+  margin: auto 1rem;
+}
+.School_suggestion_bottom{
+  display: none;
+}
+
+@media screen and (max-width: 570px) {
+  .form_sections {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 1.3rem;
+    color: #353535;
+  }
+  .School_suggestion{
+    display: none;
+    align-items: center;
+  }
+  .section_2 {
+  width: auto;
+  margin: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.School_suggestion_bottom{
+  display: block;
+  height: auto;
+}
+
+.section_1 > input,
+.section_1 > select {
+  width: 100%;
+  height: 4rem;
+  margin: 0.3rem 0 1.8rem 0;
+  background-color: white;
+}
+
+
+.form_container {
+  background-color: #ffffff;
+  width: auto;
+  max-width: 88vw;
+  padding: 1rem 1rem;
+  margin: 10rem auto;
+}
+}

@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html {
+  font-size: 10px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: #f7f7f7;
+}
+#Login_main {
+    background-color: #f7f7f7;
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    display: grid;
+}
+
+.sign_in{
+    place-self: center;
+    height: auto;
+    background: #fff;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: #353535;
+    border-radius: .2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 2px 1px rgba(154, 154, 154, 0.105);
+    width: 30rem;
+}
+
+#sign_in form {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+input ,select{
+    padding: .5rem 1.5rem;
+    align-self: center;
+    border: .2rem solid #f2f2f2;
+    outline: none;
+    border-radius: .3rem;
+    width: 25rem;
+    height: 4rem;
+    margin: .3rem 0 1.8rem 0;
+    background-color:white;
+}
+#sign_in form #Sign_in_btn{
+    border: none;
+    color: #fff;
+    background: #000;
+}
+#Sign_logo{
+    width: 90%;
+    margin: 0 2rem;
+    height:6rem;
+    position: relative;
+    background-image: url("../SVG/Company_logo.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 12rem;
+}
+.btn_s{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn_s input {
+    font-weight: 500;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+.main_btn {
+    text-decoration: none;
+    flex-grow: 1;
+    display: flex;
+    width: 5rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    max-width: 48%;
+    text-transform: uppercase;
+}
+#cancel{
+    background: #f2f2f2 !important;
+}
+
+.incorrect{
+    color: rgb(255, 75, 68);
+}
+.correct{
+    color: rgb(68, 255, 137);
+}
+
+#log_in_btn , #sign_in_btnO{
+    color: #fff;
+    margin: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    background: #000;
+}
+#preview{
+    width: 8rem;
+    height: 10rem;
+    overflow: hidden;
+    background: #e6eaeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#preview img{
+    height: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+form > #preview {
+    align-self: center;
+}

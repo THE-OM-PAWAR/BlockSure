@@ -1,0 +1,404 @@
+#article_About_coaching {
+  padding: 6rem 1.7rem 17rem 1.7rem;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12.5px);
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+}
+#main_heading {
+  padding: 0.5rem 0;
+  font-size: 2.3rem;
+  font-weight: 600;
+  max-width: 700px;
+  margin: auto;
+}
+
+#introPera {
+  max-width: 900px;
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+  margin: auto;
+}
+#intro_box {
+  text-align: center;
+  width: auto;
+}
+
+/* BATCHES BOX DESGINING */
+#Batches_section {
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+#batches_box {
+  transform: translateY(-15rem);
+  /* height: 20rem; */
+  width: 100%;
+  top: 0;
+  position: relative;
+  padding: 3.5rem  3rem;
+}
+#batchse_bg_img{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  background-image: url(../../uploads/243492-P3DDAX-995.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(.4rem);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.all_batch_list{
+  color: black;
+  font-weight: bold;
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(100%);
+  -ms-overflow-style: none; /* IE and Edge */
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+.all_batch_list::-webkit-scrollbar {
+  display: none;
+}
+.batch{
+  scroll-snap-type: x mandatory;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.subj_list_box{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+}
+.subj_list_box > ul{
+  padding-top: .5rem;
+  padding: 2rem;
+  width: 2rem;
+}
+.batch .subj_list_box .subject_other{
+  padding-top: 5.5rem;
+}
+#batches_list_heading{
+  font-size: 3rem;
+}
+#sub_context ,#batches_list_heading ,.all_batch_list{
+  position: relative;
+  z-index: 2;
+}
+#sub_context{
+  font-size: 1rem;
+  padding: .0  0 0rem 0;
+}
+.batch div h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 1.4rem 0;
+}
+.batch div h4{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.batch div ul li{
+  margin: 0 2rem;
+  font-size: 2rem;
+  list-style: disc;
+}
+.subj_Oth{
+  font-weight: 500;
+}
+#about_teacher_para, #about_teacher a{
+  font-size: 1.5rem;
+  padding: 3rem calc(15%);
+  color: white;
+}
+#about_teacher{
+  font-style: normal;
+  padding: 0 0 6rem 0;
+}
+.subj_list_box ul{
+  width: fit-content;
+}
+
+
+
+
+
+/* Session Structure */
+.session_structure_box{
+  background-color: black;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+}
+.SS_main_content{
+  color: white;
+  margin: 5vw 10vw;
+}
+.SS_main_content h3{
+  font-size: 3.2rem;
+  text-transform: capitalize;
+  font-style: normal;
+  margin: 1rem auto;
+  font-weight: 300;
+}
+.SS_main_content p{
+  font-size: 1.6rem;
+  font-style: normal;
+  margin: 3rem auto;
+  font-weight: 300;
+}
+.SS_main_content button{
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 800;
+  padding: 1rem 2rem;
+  border: none;
+}
+
+
+/* contact information section */
+#contact_section{
+  background-color: black;
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.main_contact_container{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card_contact{
+  background-color: #171717;
+  width: 100%;
+  max-width: 40rem;
+  min-height: 35rem;
+  padding: 2rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: .2s;
+}
+.card_contact:active{
+  background-color: #1e1e1e;
+}
+#mobile_no_pre{
+  cursor: pointer;
+}
+#location_button{
+  border: none;
+  color: white;
+}
+#location_button h2{
+  color: white;
+}
+.card_contact h2{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.logo_head img{
+  user-select: none;
+  height: 9rem;
+}
+.logo_head{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  width: min-content;
+  min-width: 200px;
+}
+.logo_head a{
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+.logo_head p{
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  word-wrap: break-word;
+}
+.anchor{
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  width: min-content;
+  min-width: 20rem;
+  text-align: center;
+}
+.location_text{
+  font-size: 1.5rem;
+  letter-spacing: .08rem;
+  font-weight: 200;
+  color: white;
+}
+.card_contact  span{
+  color: white;
+  font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 899px) {
+  #Batches_section {
+    align-items: flex-end;
+  }
+  #batches_box {
+    width: 93%;
+    transform: translatey(-10rem);
+  }
+
+}
+@media screen and (min-width: 450px) {
+  #article_About_coaching {
+    padding: 7rem 4rem 20rem 4rem;
+  }
+  #main_heading {
+    padding: 0.5rem 0;
+    font-size: 3.5rem;
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 700px) {
+  #article_About_coaching {
+    padding: 7rem 15rem 23rem 15rem;
+  }
+  #main_heading {
+    padding: 0.5rem 0;
+    font-size: 4rem;
+    font-weight: 400;
+  }
+  .all_batch_list{
+    grid-auto-columns: calc(100%/2);
+  }
+  .batch{
+    scroll-snap-align: start;
+  }
+}
+@media screen and (min-width: 899px) {
+  #article_About_coaching {
+    padding: 8rem 18rem 25rem 18rem;
+  }
+  .batch .subj_list_box .subject_other{
+    padding-top: 1rem;
+  }
+  #main_heading {
+    padding: 0.5rem 0;
+    font-size: 4.5rem;
+    font-weight: 400;
+  }
+  .all_batch_list{
+    grid-auto-columns: calc(100%/4);
+  }
+  .subj_list_box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .SS_main_content{
+    padding: 0 10vw;
+  }
+  .main_contact_container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1100px) {
+
+  #article_About_coaching {
+    padding: 8rem 18rem 28rem 18rem;
+  }
+  #main_heading {
+    padding: 0.5rem 0;
+    font-size: 5.5rem;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 400px) {
+
+
+  .subj_list_box{
+    font-size: .8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  
+  }
+  .subj_list_box ul{
+    padding: 2rem;
+    width: 2rem;
+    font-size: 1rem;
+  }
+  .batch .subj_list_box .subject_other{
+    font-size: 1rem;
+  }
+  #batches_list_heading{
+    font-size: 2.6rem;
+  }
+
+  .batch div h3{
+    font-size: 1.6rem;
+  }
+  .batch div h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .batch div h5{
+    font-size: 1rem;
+  }
+  .batch div ul li{
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    list-style: disc;
+  }
+  .subj_Oth{
+    font-weight: 500;
+  }
+  #about_teacher_para, #about_teacher a{
+    font-size: 1.5rem;
+    padding: 3rem calc(15%);
+    color: white;
+  }
+  #about_teacher{
+    font-style: normal;
+    padding: 0 0 6rem 0;
+  }
+  .subj_list_box ul{
+    width: fit-content;
+  }
+  
+}

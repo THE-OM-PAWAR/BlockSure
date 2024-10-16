@@ -1,0 +1,61 @@
+.modal_main{
+    z-index: 80;
+}
+
+.Modal_heading_slider{
+    margin: 0;
+}
+.modal_blue_dot_big{
+    margin: .5rem 1rem .5rem 0;
+}
+.close{
+    line-height: 2rem;
+    margin-top: 2.2rem;
+    margin-right: .5rem;
+}
+.modal_container{
+    position: relative;
+    max-width: 35rem;
+    width: 80vw;
+    background: #fff;
+    border-radius: .2rem;
+    padding: 2rem;
+    margin: auto;
+}
+.preset_box{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.heading_presets{
+    font-size: 1.6rem;
+    margin-bottom: .4rem;
+}
+.all_presets{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.preset{
+    padding: .4rem 1.5rem ;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    background-color: #f3f3f3;
+    width: max-content;
+    font-weight: 600;
+    margin: .5rem .5rem;
+}
+#check_presets {
+    width: 1.6rem;
+    padding: 0;
+    margin: 0;
+    height: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }   
+  .check_presets_label {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 1.4rem;
+  }
+  

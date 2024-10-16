@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+      rel="shortcut icon"
+      href="SVG/coaching favicon.svg"
+      type="image/x-icon"
+    /> -->
+    <meta name="author" content="RKclasses" />
+    <meta
+      name="keywords"
+      content="rk coaching classes pithampur teachers, rk coaching class pithampur about us, rk coaching classes about us, rk classes about us, rk coaching centre near me , RK coaching classes pithampur, rk coaching pithampur, RK coaching enter about, rk classes pithampur , rk coaching pithampur"
+    />
+
+    <meta
+      name="description"
+      content="Discover excellence at RK Coaching Classes Pithampur. Our experienced faculty, comprehensive curriculum, and supportive environment empower students to excel academically. Join us for a bright future!"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/HTML/about.html" />
+    <meta
+      property="og:title"
+      content="rkclasses | RK coaching classses is the best coaching classes in pithampur for class 10th , 11th , 12th"
+    />
+    <meta
+      property="og:description"
+      content="Discover excellence at RK Coaching Classes Pithampur. Our experienced faculty, comprehensive curriculum, and supportive environment empower students to excel academically. Join us for a bright future!"
+    />
+    <meta property="og:image" content="SVG/coaching favicon.svg" />
+
+    <!-- <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="SVG/coaching favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/svg"
+      sizes="32x32"
+      href="SVG/coaching favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/svg"
+      sizes="16x16"
+      href="SVG/coaching favicon.svg"
+    /> -->
+
+    <!-- <link rel="mask-icon" href="SVG/coaching favicon.svg" color="#ffffff" /> -->
+    <!-- <meta name="msapplication-TileColor" content="#ffffff" /> -->
+    <!-- <meta name="theme-color" content="#ffffff" /> -->
+
+    <!-- <link
+      rel="shortcut icon"
+      href="../SVG/coaching favicon.svg"
+      type="image/x-icon"
+    /> -->
+    <link
+      rel="shortcut icon"
+      href="/SVG/coaching favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../CSS/component styles/menu_bar.css" />
+    <link rel="stylesheet" href="../CSS/component styles/fee_structure.css" />
+    <link rel="stylesheet" href="../CSS/component styles/footer.css" />
+    <link rel="stylesheet" href="../CSS/basic.css" />
+    <!-- <link rel="stylesheet" href="../CSS/Login.css" /> -->
+    <link rel="stylesheet" href="../CSS/terms.css" />
+    <link rel="stylesheet" href="../CSS/component styles/modal.css" />
+    <link
+      rel="stylesheet"
+      href="/Console_management/Console_CSS/Console_management.css"
+    />
+    <link rel="stylesheet" href="/Console_management/Console_CSS/form.css" />
+    <link rel="stylesheet" href="/Console_management/Console_CSS/modal.css" />
+    <link
+      rel="stylesheet"
+      href="/Console_management/Console_CSS/student_detail.css"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <title>About Us</title>
+  </head>
+  <body>
+    <header>
+      <!-- =======================NAVIGATION BAR START========================== -->
+      <nav>
+        <!-- ======COMPANY LOGO======= -->
+        <div id="Company_logo" class="company_logo">
+          <!-- ======MENU ICON BUTTON======= -->
+          <div onclick="slider_function()" class="menu_icon" id="menu_icon">
+            <img src="../SVG/menu_btn.svg" alt="" />
+          </div>
+
+          <!-- ======MENU ICON BUTTON======= -->
+          <object
+            data="SVG/Company_logo.svg"
+            type="image/svg+xml"
+            class="logo"
+            id="logo"
+          ></object>
+        </div>
+
+        <!-- ======MENU BUTTON======= -->
+        <div id="menu_button_section">
+          <div class="menu_option_box" id="menu_option_box">
+            <ul>
+              <li class="menu_options_BTN">
+                <a href="/Add_batch"
+                  ><div class="option_name">Add Batch</div></a
+                >
+              </li>
+              <li class="menu_options_BTN">
+                <a href="/Addmission"
+                  ><div class="option_name">Admission</div></a
+                >
+              </li>
+            </ul>
+            <!-- ======MENU ICON BUTTON======= -->
+          </div>
+          <div onclick="notification_func()" class="menu_icon" id="menu_icon">
+            <img src="../SVG/notice.svg" alt="" />
+          </div>
+          <!-- ======MENU BUTTON======= -->
+        </div>
+      </nav>
+      <!-- =======================NAVIGATION BAR END========================== -->
+    </header>
+
+    <div id="slide_wraper" onclick="slider_function()" class="slide_wraper slide_wraper_close" ></div>
+    <div id="slider_box" class="slider_box slider_box_close">
+      <div class="slider_container" id="slider_container_batch">
+        <div class="heading_slider">
+          <div class="blue_dot"></div>
+          <div class="head_text">All Batches</div>
+        </div>
+        <!-- <div class="batch_box">
+          <div class="code_box">012B</div>
+          <div class="Batch_name">class 12th Maths</div>
+        </div> -->
+      </div>
+      <div class="slider_container display_none" id="filter_container_slider">
+        <div class="heading_slider">
+          <div class="blue_dot"></div>
+          <div class="head_text">Filter</div>
+        </div>
+        <div class="filter_container">
+          <div class="filter_unit">
+            <form onsubmit="filter_student(event)">
+
+
+            <label id="inp_Filter" for="Filter_amount">Enter Amount</label>
+            <input type="number" name="Filter_amount" id="Filter_amount" required/>
+            <label class="type_selector" for="less_then">
+              <input
+                type="radio"
+                name="filter_type"
+                class="filter_type"
+                id="less_then"
+                value="less"
+                required
+              />
+              paid less
+            </label>
+            <label class="type_selector" for="more_then">
+              <input
+                type="radio"
+                name="filter_type"
+                class="filter_type"
+                id="more_then"
+                value="more"
+                required
+              />
+              paid more
+            </label>
+
+          </div>
+  
+          <div class="button_box">
+            <button class="button_filter" onclick="clear_filter()">Clear</button>
+            <button class="button_filter" type="submit">Apply Filter</button>
+          </div>
+          
+        </form>
+
+  
+        </div>
+      </div>
+      <div class="slider_container">
+        <div class="heading_slider">
+          <div class="blue_dot"></div>
+          <div class="head_text">Other</div>
+        </div>
+        <div class="menu_option_box" id="">
+          <a href="Addmission">
+            <div class="batch_box">
+              <div class="code_box" style="padding: 1rem;">
+                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.5 2V31" stroke="black" stroke-width="3" stroke-linecap="round"/>
+                <path d="M2 16.5H31" stroke="black" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="Batch_name">Admission</div>
+            </div>
+          </a>
+   
+          <!-- ======MENU ICON BUTTON======= -->
+        </div>
+      </div>
+    </div>
+
+    <div class="detail_container detail_container_closed" id="detail_container">
+      <nav class="nav_detail_box">
+        <!-- ======COMPANY LOGO======= -->
+        <div id="Company_logo" class="company_logo">
+          <!-- ======MENU ICON BUTTON======= -->
+          <div class="menu_icon back_arrow_box" onclick="close_detail_box()">
+            <svg
+              width="69"
+              height="28"
+              viewBox="0 0 69 38"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.23223 17.2322C0.25592 18.2085 0.25592 19.7915 1.23223 20.7678L17.1421 36.6777C18.1184 37.654 19.7014 37.654 20.6777 36.6777C21.654 35.7014 21.654 34.1184 20.6777 33.1421L6.53553 19L20.6777 4.85786C21.654 3.88155 21.654 2.29864 20.6777 1.32233C19.7014 0.34602 18.1184 0.34602 17.1421 1.32233L1.23223 17.2322ZM69 16.5L3 16.5V21.5L69 21.5V16.5Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+
+          <!-- ======MENU ICON BUTTON======= -->
+          <object
+            data="SVG/Company_logo.svg"
+            type="image/svg+xml"
+            class="logo"
+            id="logo"
+          ></object>
+        </div>
+
+        <!-- ======MENU BUTTON======= -->
+        <div id="menu_button_section">
+          <!-- ======MENU BUTTON======= -->
+        </div>
+      </nav>
+
+      <!-- <div class="notification_container">
+        <div class="heading_slider">
+          <div class="blue_dot"></div>
+          <div class="head_text">All Batches</div>
+        </div>
+        <div class="notification_box">
+          <div class="notice_head">
+            <div class="grey_box"></div>
+            <div class="notification_head">Om Pawar</div>
+          </div>
+          <h4 class="notification_domain">fees Added</h4>
+          <div class="upper_box">
+            <div class="img_box">
+              <img
+                src="/uploads/student_photos/1718139920697om pawar85478.jpg"
+                alt=""
+              />
+            </div>
+            <div class="name_box">
+              <p>Manish tripathi Manish tripathi Manish tripathi</p>
+              <p class="fees_text">paid 1400</p>
+            </div>
+          </div>
+
+          <div class="bottom_box_notice">
+            <div class="data_box">
+              <p class="head_data">payment Date</p>
+              <div class="main_data_box">
+                <div class="date_box">30-April-2024</div>
+                <div class="Amount">2000 INR</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="notification_box">
+          <div class="notice_head">
+            <div class="grey_box"></div>
+            <div class="notification_head">Om Pawar</div>
+          </div>
+          <h4 class="notification_domain">Addmission</h4>
+          <div class="upper_box">
+            <div class="img_box">
+              <img
+                src="/uploads/student_photos/1718139920697om pawar85478.jpg"
+                alt=""
+              />
+            </div>
+            <div class="name_box">
+              <p>Manish tripathi Manish tripathi Manish tripathi</p>
+              <p class="fees_text">paid 1400</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <div class="student_container">
+      <div class="heading_slider">
+        <div class="blue_dot blue_dot_big"></div>
+        <div class="head_text head_text_big" id="Batch_heading">
+          Select Any Batch
+        </div>
+      </div>
+      <div class="search_bar">
+        <input
+          type="search"
+          name="search_bar"
+          id="search_bar"
+          onkeyup="search_student(this)"
+          
+          placeholder="Student Name"
+        />
+        <button>
+          <svg
+            width="25"
+            height="26"
+            viewBox="0 0 25 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="10.5" cy="10.5" r="9" stroke="black" stroke-width="3" />
+            <path
+              d="M21.6569 25.2936C22.227 25.8947 23.1764 25.9199 23.7775 25.3498C24.3786 24.7797 24.4038 23.8303 23.8337 23.2292L21.6569 25.2936ZM15.2661 18.555L21.6569 25.2936L23.8337 23.2292L17.4429 16.4906L15.2661 18.555Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div class="student_unit" id="student_unit">
+
+      </div>
+    </div>
+
+    <!-- <script src="../JavaScript/componentScripting.js"></script> -->
+    <!-------------|| DINAMICALLY GENERATED MODAL PAGE ARE HERE ||------------->
+    <section class="modal_main" id="modal_main"></section>
+    <!------------------- || END OF MODAL PAGE ||---------------------->
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../JavaScript/user_data.js"></script>
+    <script src="../JavaScript/modal.js"></script>
+    <script src="/Console_management/javascript/render_data.js"></script>
+    <script src="/Console_management/javascript/console_local.js"></script>
+  </body>
+</html>

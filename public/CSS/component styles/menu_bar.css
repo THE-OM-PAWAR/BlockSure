@@ -1,0 +1,219 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #ffffffe6;
+  backdrop-filter: blur(12.5px);
+  padding: 0.5rem 1.8rem;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  align-self: center;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+#Company_logo {
+  /* width: 14rem; */
+  height: 4rem;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+}
+#Page_name {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  font-size: 1.5rem;
+  padding: .8rem;
+}
+#Company_logo #logo {
+  user-select: none;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+}
+#menu_button_section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+#menu_option_box {
+  display: none;
+  align-items: center;
+}
+#menu_option_box ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.option_name {
+  padding: 0 1.5rem;
+  color: black;
+  transition: 0.3s;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+
+#menu_option_box ul li:hover .option_name {
+  text-decoration: underline;
+}
+
+#menu_icon {
+  position: relative;
+  padding: 0.1rem;
+  user-select: none;
+  margin: auto 1.2rem;
+}
+#menu_icon img {
+  width: 2.5rem;
+}
+
+/* MENUBOX STYLING */
+.menu_box {
+  z-index: 10;
+  position: fixed;
+  margin: 0;
+  height: 100%;
+  width: 0%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(9px);
+  transition: .3s cubic-bezier(1, 0.4, 0.31, 1.2);
+  top: 0;
+  left: 100%;
+}
+.menu_box_ON {
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  transition: .3s cubic-bezier(1, 0.4, 0.31, 1.2);
+}
+#top_menu {
+  width: 100%;
+  padding: 1rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#menu_company_logo_box {
+  background-image: url("../../SVG/menu_box_company_logo.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto 100%;
+  height: 4rem;
+  width: 16rem;
+  margin: 0.5rem 1.5rem;
+}
+#close_btn {
+  background-image: url("../../SVG/closeBTN.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  height: 1.7rem;
+  width: 1.7rem;
+  margin: 0.5rem 1.5rem 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+/* Menu options under menubox styling */
+#menu_option_under_menubox {
+  width: 100%;
+  padding: 2rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#menu_option_under_menubox ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 1.6rem 1rem;
+}
+#menu_option_under_menubox ul li div {
+  padding: .6rem 1rem;
+  color: black;
+  transition: 0.3s;
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+#menu_option_under_menubox ul li a {
+  text-decoration: none;
+}
+#menu_option_under_menubox ul li:hover div {
+  text-decoration: underline;
+}
+
+/* other info under menubox styling */
+#others_info {
+  width: 100%;
+  padding: 2rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100% ;
+  overflow-y: scroll;
+}
+.sub_ot_info {
+  padding: 1rem 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.2rem;
+}
+.info {
+  padding: 1.2rem 2rem;
+}
+#E_mail {
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  padding: 0.5rem 0;
+  color: black;
+}
+.info:hover > .sub_ot_info {
+  color: #147ac4;
+}
+.info_main {
+  padding: 0.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 550;
+}
+.address_OF {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 0rem 0;
+  width: 100%;
+}
+@media screen and (min-width: 680px) {
+  #menu_option_box {
+    display: flex;
+  }
+}
+@media screen and (min-width: 900px) {
+  #menu_option_box {
+    display: flex;
+  }
+  #menu_box{
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .option_name {
+    color: black;
+    transition: 0.3s;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link
+    rel="shortcut icon"
+    href="SVG/coaching favicon.svg"
+    type="image/x-icon"
+  />
+  <meta name="author" content="RKclasses">
+  <meta
+    name="keywords"
+    content="rk coaching classes pithampur sigin page, rk coaching class batches, rk coaching center batches, rk coaching classes pithampur sign in pagr , rk coaching classes pithampur sign up , rk coaching classes pithampur account "
+  />
+
+  <meta
+    name="description"
+    content="Welcome to RK Coaching Classes Pithampur! Sign in to access our comprehensive coaching resources and unleash your full potential. Join our expert instructors and unlock a brighter future. Enroll now"
+  />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/" />
+  <meta
+    property="og:title"
+    content="rkclasses | Sign in to access our comprehensive coaching resource"
+  />
+  <meta
+    property="og:description"
+    content="Welcome to RK Coaching Classes Pithampur! Sign in to access our comprehensive coaching resources and unleash your full potential. Join our expert instructors and unlock a brighter future. Enroll now"
+  />
+  <meta property="og:image" content="SVG/coaching favicon.svg" />
+
+  <link
+    rel="apple-touch-icon"
+    sizes="120x120"
+    href="SVG/coaching favicon.svg"
+  />
+  <link
+    rel="icon"
+    type="image/svg"
+    sizes="32x32"
+    href="SVG/coaching favicon.svg"
+  />
+  <link
+    rel="icon"
+    type="image/svg"
+    sizes="16x16"
+    href="SVG/coaching favicon.svg"
+  />
+  <link rel="mask-icon" href="SVG/coaching favicon.svg" color="#ffffff" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="theme-color" content="#ffffff" />
+
+
+
+
+
+
+
+
+    <link
+      rel="shortcut icon"
+      href="../SVG/coaching favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../CSS/Login.css" />
+    <link rel="stylesheet" href="../CSS/basic.css" />
+    <link rel="stylesheet" href="../CSS/component styles/footer.css" />
+    <title>Sign In</title>
+  </head>
+  <body>
+    <section id="Login_main">
+        <div class="sign_in" id="sign_in">
+          <div class="Sign_logo" id="Sign_logo"><!-- LOGO is applied using css --></div>
+  
+          <!-- making form here -->
+          <form action="/signIn" method="post" id="form_signIn" >
+            <!-- User Name -->
+            <div>
+              <p>Create your account of Rk coaching classes pithampur</p>
+
+              <br>
+              <br>
+            </div>
+            <p>Your name</p>
+            <input type="text" name="username" id="username" placeholder="Your Name" required/>
+            <!-- mobile number -->
+            <p>Mobile number</p>
+            <input type="number" name="mobile_No" id="mobile_No" placeholder="Your Mobile No." required/>
+  
+  
+            <!-- passward -->
+            <p>Create Passward</p>
+            <input type="password" name="password" id="password" placeholder="Create a passward" required/>
+            <!-- confirm passward -->
+            <p class="instruction color" id="instruction">Confirm Passward</p>
+            <input
+            type="password"
+            name="C_password"
+            onchange="checkPass()"
+            id="C_password"
+            placeholder="Confirm passward"
+            required
+            />
+            <!-- buttons related div -->
+            <div class="btn_s">
+              <!-- cancel buttons -->
+              <a href="/"  class="main_btn">
+                <input type="button" value="cancel" id="Cancel"   >
+              </a>
+              <!-- submit buttons -->
+                <input type="submit" class="main_btn" id="Sign_in_btn" value="Sign in" />
+              </div>
+            </form>
+          </div>
+  
+  
+        <!-------------|| GIVING OPTION FOR LONIN ARE HERE ||------------->
+        <div class="sign_in" id="sign_in">
+          <p>already have an account</p>
+          <a href="/logIn">
+            <input type="submit" id="log_in_btn" value="log in" />
+          </a>
+        </div>
+        <!-------------|| GIVING OPTION FOR LONIN ARE HERE ||------------->
+      </section>
+      <!-------------|| SIGN IN HTML END ARE HERE ||------------->
+  
+
+    <!-------------|| LINKING ALL THE JAVA SCRIPT HERE ||------------->
+    <script src="../JavaScript/pass_verification.js"></script>
+    <!-------------|| LINKING ALL THE JAVA SCRIPT HERE ||------------->
+  </body>
+</html>

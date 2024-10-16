@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="SVG/coaching favicon.svg"
+      type="image/x-icon"
+    />
+    <meta name="author" content="RKclasses" />
+
+    <meta property="og:image" content="SVG/coaching favicon.svg" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="SVG/coaching favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/svg"
+      sizes="32x32"
+      href="SVG/coaching favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/svg"
+      sizes="16x16"
+      href="SVG/coaching favicon.svg"
+    />
+    <link rel="mask-icon" href="SVG/coaching favicon.svg" color="#ffffff" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link
+      rel="shortcut icon"
+      href="../SVG/coaching favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../CSS/Login.css" />
+    <link rel="stylesheet" href="../CSS/basic.css" />
+    <link rel="stylesheet" href="../CSS/component styles/footer.css" />
+    <link rel="stylesheet" href="/Console_management/Console_CSS/form.css" />
+    <link
+      rel="stylesheet"
+      href="/Console_management/Console_CSS/Console_management.css"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="form_container">
+      <form
+        onsubmit="stop_Btn(event)"
+        id="form_container"
+        action="/Addmission"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <div class="heading_slider">
+          <div class="blue_dot blue_dot_big"></div>
+          <div class="head_text head_text_big">Admission Form</div>
+        </div>
+        <div class="form_sections">
+          <div class="section_1">
+            <div>
+              <br />
+            </div>
+            <!-- user mobile number -->
+            <p>Student Name</p>
+            <input type="text" name="Student_name" id="Student_name" required />
+            <p>Father Name</p>
+            <input type="text" name="Father_name" id="Father_name" required />
+            <!-- user passward -->
+            <p>Contact Number</p>
+            <input
+              type="number"
+              name="Contact_No"
+              id="Contact_No"
+              maxlength="10"
+              minlength="10"
+              required
+            />
+            <p>School Name</p>
+            <input type="text" name="School_name" id="School_name" required />
+            <!-- user passward -->
+            <p>Address</p>
+            <input type="text" name="Address" id="Address" required />
+
+            <p>Addmission Fees</p>
+            <input
+              type="text"
+              name="Addmission_fee"
+              id="Addmission_fee"
+              required
+            />
+
+            <p>Main Instalment</p>
+            <input
+              type="text"
+              name="Main_installment"
+              id="Main_installment"
+              required
+            />
+
+            <p>Batch</p>
+            <select required name="Batch_name" id="Batch_name">
+              <option value="">--Select Batch--</option>
+              <!-- adding option dinamically  -->
+            </select>
+          </div>
+          <div class="section_2">
+            <label id="student_img_label" for="student_img">
+              <img src="../uploads/result_folder/user.svg" alt="this" />
+              <input
+                type="file"
+                name="student_img"
+                id="student_img"
+                accept="image/*"
+                onchange="img_rendering_func(event)"
+              />
+            </label>
+            <div class="School_suggestion">
+              <h5>School Suggestion</h5>
+              <div onclick="School_suggestion(this)" class="suggestion_box">
+                St. john's hs. sec. school Lorem, ipsum dolor.
+              </div>
+              <div onclick="School_suggestion(this)" class="suggestion_box">
+                C.M. RISE Govt. Model School Mhowgaon
+              </div>
+              <div onclick="School_suggestion(this)" class="suggestion_box">
+                Govt. Excellence H.S. School
+              </div>
+              <div onclick="School_suggestion(this)" class="suggestion_box">
+                Achiever's Academy Higher Secondary School, Pithampur
+              </div>
+              <div onclick="School_suggestion(this)" class="suggestion_box">
+                Childrens Care School Pithampur
+              </div>
+              <div onclick="School_suggestion(this)" class="suggestion_box">
+                Shraddha Bal Mandir High School
+              </div>
+              <div onclick="School_suggestion(this)" class="suggestion_box">
+                Patel Public High School Pithampur
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="BTN_container">
+          <div class="btn_s" class="main_btn">
+            <!-- cancel buttons -->
+            <a href="/management_console" class="main_btn">
+              <input type="button" value="cancel" id="Cancel" />
+            </a>
+            <!-- submit buttons -->
+            <input
+              type="submit"
+              id="Sign_in_btn"
+              class="main_btn"
+              value="Confirm"
+            />
+          </div>
+        </div>
+      </form>
+      <div class="School_suggestion School_suggestion_bottom">
+        <h5>School Suggestion</h5>
+        <div onclick="School_suggestion(this)" class="suggestion_box">
+          St. john's hs. sec. school Lorem, ipsum dolor.
+        </div>
+        <div onclick="School_suggestion(this)" class="suggestion_box">
+          C.M. RISE Govt. Model School Mhowgaon
+        </div>
+        <div onclick="School_suggestion(this)" class="suggestion_box">
+          Govt. Excellence H.S. School
+        </div>
+        <div onclick="School_suggestion(this)" class="suggestion_box">
+          Achiever's Academy Higher Secondary School, Pithampur
+        </div>
+        <div onclick="School_suggestion(this)" class="suggestion_box">
+          Childrens Care School Pithampur
+        </div>
+        <div onclick="School_suggestion(this)" class="suggestion_box">
+          Shraddha Bal Mandir High School
+        </div>
+        <div onclick="School_suggestion(this)" class="suggestion_box">
+          Patel Public High School Pithampur
+        </div>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/heic2any/dist/heic2any.min.js"></script>
+  </body>
+  <script>
+    let socket = io();
+
+    socket.emit("give_batches");
+    socket.on("take_batches", (batches) => {
+      console.log(batches);
+      batches.forEach((element) => {
+        let Batch_name = document.getElementById("Batch_name");
+        let batch = document.createElement("option");
+        batch.value = element.Batch_code;
+        batch.setAttribute("required", "true");
+        batch.innerHTML = element.Batch_name;
+        Batch_name.appendChild(batch);
+      });
+    });
+
+    let School_suggestion = (element) => {
+      document.getElementById("School_name").value = element.textContent;
+    };
+
+    let input = document.getElementById("student_img");
+    let username = document.getElementById("Student_name");
+    let preview = document.getElementById("student_img_label");
+    // preview.style.display = "none";
+    WIDTH = 600;
+
+
+
+
+
+    
+
+    document.getElementById('student_img').addEventListener('change', async function(event) {
+    const file = event.target.files[0];
+    const fileExtension = file.name.split('.').pop().toLowerCase();
+    console.log(file , file.type)
+    console.log(file && fileExtension === 'heic')
+
+  if (file && fileExtension === 'heic') {
+    try {
+      const blob = await heic2any({
+        blob: file,
+        toType: 'image/jpeg',
+        quality: 0.6 // Adjust quality if necessary
+      });
+
+      // Create a new file from the blob
+      const newFile = new File([blob], `converted.jpeg`, { type: 'image/jpeg' });
+      console.log(newFile)
+
+      // Create a new input element and append the new file to it
+      const newInput = document.createElement('input');
+      // newInput.type = 'hidden';
+      newInput.name = 'convertedImage';
+      let dataTransfer = new DataTransfer();
+      dataTransfer.items.add(newFile);
+      input.files = dataTransfer.files;
+
+      console.log(dataTransfer.files)
+      console.log(input.files[0])
+
+      const event = new Event('change', { bubbles: true });
+      input.dispatchEvent(event);
+
+      // let img = document.createElement("img");
+      //     img.src = dataTransfer.files[0];
+      //     preview.innerHTML = "";
+      //     // preview.style.display = "inherit";
+      //     preview.firstElementChild.remove();
+      //     preview.prepend(img);
+
+      // Append the new input element to the form
+      // const form = document.getElementById('imageForm');
+      // form.appendChild(newInput);
+
+    } catch (error) {
+      console.error('Conversion error:', error);
+    }
+  } else {
+    // alert('Please upload a valid HEIC file.');
+  }
+});
+
+
+
+
+
+
+
+
+
+
+    let img_rendering_func = (event) => {
+      let image_file = event.target.files[0];
+      console.log(username.value);
+
+      console.log("Original File", image_file);
+      if (image_file == undefined) {
+        preview.firstElementChild.src = "../uploads/result_folder/user.svg";
+        return;
+      }
+      let reader = new FileReader();
+
+      reader.readAsDataURL(image_file);
+      reader.onload = (event) => {
+        console.log(event.target);
+        image_url = event.target.result;
+        let image = document.createElement("img");
+        image.src = image_url;
+
+        image.onload = (e) => {
+          let canvas = document.createElement("canvas");
+          let ratio = WIDTH / image.width;
+          canvas.width = WIDTH;
+          canvas.height = image.height * ratio;
+
+          let context = canvas.getContext("2d");
+          context.drawImage(image, 0, 0, canvas.width, canvas.height);
+
+          let new_image_url = canvas.toDataURL("image/jpeg", 98);
+
+          // console.log("Image URL: ", new_image_url)
+
+          let image_file = urlToFile(new_image_url);
+          // uploadImage(input.file )
+          console.log(input.files);
+          input.files[0] = image_file;
+          let img = document.createElement("img");
+          img.src = new_image_url;
+          // preview.innerHTML = "";
+          // preview.style.display = "inherit";
+          preview.firstElementChild.remove();
+          preview.prepend(img);
+
+          let dt = new DataTransfer();
+          dt.items.add(image_file);
+          console.log(dt.files);
+          console.log((input.files = dt.files));
+        };
+      };
+    };
+
+    let urlToFile = (url) => {
+      let arr = url.split(",");
+      console.log(arr);
+      let mime = arr[0].match(/:(.*?);/)[1];
+      let data = arr[1];
+
+      let dataStr = atob(data);
+      let n = dataStr.length;
+      let dataArr = new Uint8Array(n);
+
+      while (n--) {
+        dataArr[n] = dataStr.charCodeAt(n);
+      }
+
+      let file = new File(
+        [dataArr],
+        `${username.value + Math.floor(Math.random() * 100000)}.jpg`,
+        { type: mime }
+      );
+      console.log(file.name);
+
+      return file;
+    };
+
+    let form = document.getElementById("form_container");
+    console.log(form);
+
+    form.addEventListener("submit", function (event) {
+      const contactValue = Contact_No.value;
+      console.log("submited")
+
+      if (contactValue.length !== 10) {
+        alert("Contact number must be exactly 10 digits long.");
+        event.preventDefault(); // Prevent form submission
+        work_Btn()
+      }
+    });
+
+
+
+
+    function stop_Btn(event){
+      document.getElementById("Sign_in_btn").disabled = true;
+    }
+    function work_Btn(event){
+      document.getElementById("Sign_in_btn").disabled = false;
+    }
+  </script>
+</html>
